@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D14857A01780E41D006BB829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579F1780E41D006BB829 /* Foundation.framework */; };
 		D14857A51780E41D006BB829 /* Saiph.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14857A41780E41D006BB829 /* Saiph.h */; };
-		D14857A71780E41D006BB829 /* Saiph.m in Sources */ = {isa = PBXBuildFile; fileRef = D14857A61780E41D006BB829 /* Saiph.m */; };
 		D14857AF1780E41D006BB829 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14857AE1780E41D006BB829 /* SenTestingKit.framework */; };
 		D14857B11780E41D006BB829 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14857B01780E41D006BB829 /* UIKit.framework */; };
 		D14857B21780E41D006BB829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579F1780E41D006BB829 /* Foundation.framework */; };
@@ -46,7 +45,6 @@
 		D148579F1780E41D006BB829 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D14857A31780E41D006BB829 /* Saiph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Saiph-Prefix.pch"; sourceTree = "<group>"; };
 		D14857A41780E41D006BB829 /* Saiph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saiph.h; sourceTree = "<group>"; };
-		D14857A61780E41D006BB829 /* Saiph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Saiph.m; sourceTree = "<group>"; };
 		D14857AD1780E41D006BB829 /* SaiphTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaiphTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14857AE1780E41D006BB829 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D14857B01780E41D006BB829 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +52,7 @@
 		D14857BA1780E41D006BB829 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D14857BC1780E41D006BB829 /* SaiphTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiphTests.h; sourceTree = "<group>"; };
 		D14857BD1780E41D006BB829 /* SaiphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiphTests.m; sourceTree = "<group>"; };
+		D14857C71780E4A3006BB829 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +81,7 @@
 		D14857931780E41D006BB829 = {
 			isa = PBXGroup;
 			children = (
+				D14857C71780E4A3006BB829 /* README.md */,
 				D14857A11780E41D006BB829 /* Saiph */,
 				D14857B61780E41D006BB829 /* SaiphTests */,
 				D148579E1780E41D006BB829 /* Frameworks */,
@@ -112,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				D14857A41780E41D006BB829 /* Saiph.h */,
-				D14857A61780E41D006BB829 /* Saiph.m */,
 				D14857A21780E41D006BB829 /* Supporting Files */,
 			);
 			path = Saiph;
@@ -243,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14857A71780E41D006BB829 /* Saiph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
