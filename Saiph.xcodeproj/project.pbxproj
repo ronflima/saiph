@@ -41,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D10AF0061780E9F100592A8F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		D148579C1780E41D006BB829 /* libSaiph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSaiph.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D148579F1780E41D006BB829 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D14857A31780E41D006BB829 /* Saiph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Saiph-Prefix.pch"; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		D14857931780E41D006BB829 = {
 			isa = PBXGroup;
 			children = (
+				D10AF0061780E9F100592A8F /* LICENSE.md */,
 				D14857C71780E4A3006BB829 /* README.md */,
 				D14857A11780E41D006BB829 /* Saiph */,
 				D14857B61780E41D006BB829 /* SaiphTests */,
@@ -401,6 +403,7 @@
 				D14857C31780E41D006BB829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D14857C41780E41D006BB829 /* Build configuration list for PBXNativeTarget "SaiphTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +412,7 @@
 				D14857C61780E41D006BB829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
