@@ -20,6 +20,7 @@
 		D1E8767717810B7F009EEB44 /* SaiphChecksummer.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8767617810B7F009EEB44 /* SaiphChecksummer.m */; };
 		D1E8767917810CE9009EEB44 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E8767817810CE9009EEB44 /* libobjc.A.dylib */; };
 		D1E8767C17810E15009EEB44 /* SaiphConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8767B17810E15009EEB44 /* SaiphConstants.m */; };
+		D1E8767F17811566009EEB44 /* SaiphChecksummer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1E8767517810B7F009EEB44 /* SaiphChecksummer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				D1E8767F17811566009EEB44 /* SaiphChecksummer.h in CopyFiles */,
 				D14857A51780E41D006BB829 /* Saiph.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
