@@ -7,6 +7,7 @@
 //
 
 #import "SaiphTests.h"
+#import "Saiph.h"
 
 @implementation SaiphTests
 
@@ -24,9 +25,20 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testMod97
 {
-    STFail(@"Unit tests are not implemented yet in SaiphTests");
+    NSString *data = @"794";
+    SaiphChecksummer *checksummer = [[SaiphChecksummer alloc] initWithData:data andAlgorithm:kSaiphAlgorithmMod97];
+    NSString *checksum = checksummer.checksum;
+    NSAssert((data.intValue * 100 + checksum.intValue) % 97 == 1, @"Failed to calculate checksum");
+}
+
+- (void)testMod97Factory
+{
+    NSString *data = @"794";
+    SaiphChecksummer *checksummer = [SaiphChecksummer checkSummerWithData:data andAlgorithm:kSaiphAlgorithmMod97];
+    NSString *checksum = checksummer.checksum;
+    NSAssert((data.intValue * 100 + checksum.intValue) % 97 == 1, @"Failed to calculate checksum");
 }
 
 @end

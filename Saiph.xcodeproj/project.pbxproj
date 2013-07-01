@@ -15,6 +15,11 @@
 		D14857B51780E41D006BB829 /* libSaiph.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579C1780E41D006BB829 /* libSaiph.a */; };
 		D14857BB1780E41D006BB829 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D14857B91780E41D006BB829 /* InfoPlist.strings */; };
 		D14857BE1780E41D006BB829 /* SaiphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14857BD1780E41D006BB829 /* SaiphTests.m */; };
+		D1E876711780F948009EEB44 /* SaiphAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E876701780F948009EEB44 /* SaiphAlgorithm.m */; };
+		D1E876741780FBC0009EEB44 /* SaiphAlgMod97.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E876731780FBC0009EEB44 /* SaiphAlgMod97.m */; };
+		D1E8767717810B7F009EEB44 /* SaiphChecksummer.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8767617810B7F009EEB44 /* SaiphChecksummer.m */; };
+		D1E8767917810CE9009EEB44 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E8767817810CE9009EEB44 /* libobjc.A.dylib */; };
+		D1E8767C17810E15009EEB44 /* SaiphConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8767B17810E15009EEB44 /* SaiphConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,15 @@
 		D14857BC1780E41D006BB829 /* SaiphTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiphTests.h; sourceTree = "<group>"; };
 		D14857BD1780E41D006BB829 /* SaiphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiphTests.m; sourceTree = "<group>"; };
 		D14857C71780E4A3006BB829 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D1E8766F1780F948009EEB44 /* SaiphAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphAlgorithm.h; sourceTree = "<group>"; };
+		D1E876701780F948009EEB44 /* SaiphAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphAlgorithm.m; sourceTree = "<group>"; };
+		D1E876721780FBC0009EEB44 /* SaiphAlgMod97.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphAlgMod97.h; sourceTree = "<group>"; };
+		D1E876731780FBC0009EEB44 /* SaiphAlgMod97.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphAlgMod97.m; sourceTree = "<group>"; };
+		D1E8767517810B7F009EEB44 /* SaiphChecksummer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphChecksummer.h; sourceTree = "<group>"; };
+		D1E8767617810B7F009EEB44 /* SaiphChecksummer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphChecksummer.m; sourceTree = "<group>"; };
+		D1E8767817810CE9009EEB44 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		D1E8767A17810E15009EEB44 /* SaiphConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphConstants.h; sourceTree = "<group>"; };
+		D1E8767B17810E15009EEB44 /* SaiphConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E8767917810CE9009EEB44 /* libobjc.A.dylib in Frameworks */,
 				D14857A01780E41D006BB829 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +118,7 @@
 		D148579E1780E41D006BB829 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1E8767817810CE9009EEB44 /* libobjc.A.dylib */,
 				D148579F1780E41D006BB829 /* Foundation.framework */,
 				D14857AE1780E41D006BB829 /* SenTestingKit.framework */,
 				D14857B01780E41D006BB829 /* UIKit.framework */,
@@ -114,7 +130,15 @@
 			isa = PBXGroup;
 			children = (
 				D14857A41780E41D006BB829 /* Saiph.h */,
+				D1E8767517810B7F009EEB44 /* SaiphChecksummer.h */,
+				D1E8767617810B7F009EEB44 /* SaiphChecksummer.m */,
+				D1E8766F1780F948009EEB44 /* SaiphAlgorithm.h */,
+				D1E876701780F948009EEB44 /* SaiphAlgorithm.m */,
 				D14857A21780E41D006BB829 /* Supporting Files */,
+				D1E876721780FBC0009EEB44 /* SaiphAlgMod97.h */,
+				D1E876731780FBC0009EEB44 /* SaiphAlgMod97.m */,
+				D1E8767A17810E15009EEB44 /* SaiphConstants.h */,
+				D1E8767B17810E15009EEB44 /* SaiphConstants.m */,
 			);
 			path = Saiph;
 			sourceTree = "<group>";
@@ -244,6 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E876711780F948009EEB44 /* SaiphAlgorithm.m in Sources */,
+				D1E876741780FBC0009EEB44 /* SaiphAlgMod97.m in Sources */,
+				D1E8767717810B7F009EEB44 /* SaiphChecksummer.m in Sources */,
+				D1E8767C17810E15009EEB44 /* SaiphConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Saiph/Saiph-Prefix.pch";
 				INFOPLIST_FILE = "SaiphTests/SaiphTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -379,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Saiph/Saiph-Prefix.pch";
 				INFOPLIST_FILE = "SaiphTests/SaiphTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
