@@ -9,6 +9,9 @@
 #import "SaiphTests.h"
 #import "Saiph.h"
 
+#define CHECKSUMMED_VALUE(a, b) (a * 100 + b)
+#define VALID_CHECKSUM(a,b) (CHECKSUMMED_VALUE(a, b) % 97 == 1)
+
 @implementation SaiphTests
 
 - (void)setUp
@@ -30,7 +33,7 @@
     NSString *data = @"794";
     SaiphChecksummer *checksummer = [[SaiphChecksummer alloc] initWithData:data andAlgorithm:kSaiphAlgorithmMod97];
     NSString *checksum = checksummer.checksum;
-    NSAssert((data.intValue * 100 + checksum.intValue) % 97 == 1, @"Failed to calculate checksum");
+    NSAssert(VALID_CHECKSUM(data.intValue, checksum.intValue), @"Failed to calculate checksum");
 }
 
 - (void)testMod97Factory
@@ -38,7 +41,7 @@
     NSString *data = @"794";
     SaiphChecksummer *checksummer = [SaiphChecksummer checkSummerWithData:data andAlgorithm:kSaiphAlgorithmMod97];
     NSString *checksum = checksummer.checksum;
-    NSAssert((data.intValue * 100 + checksum.intValue) % 97 == 1, @"Failed to calculate checksum");
+    NSAssert(VALID_CHECKSUM(data.intValue, checksum.intValue), @"Failed to calculate checksum");
 }
 
 @end
