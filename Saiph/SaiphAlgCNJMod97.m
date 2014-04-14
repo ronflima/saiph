@@ -27,7 +27,7 @@
     __block NSString *lastCalculatedCheckDigits = @"";
     [dataParts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSString *dataPart = [lastCalculatedCheckDigits stringByAppendingString:obj];
-        lastCalculatedCheckDigits = [NSString stringWithFormat:@"%ld", dataPart.integerValue % 97];
+        lastCalculatedCheckDigits = [NSString stringWithFormat:@"%ld", (long)dataPart.integerValue % 97];
     }];
     return [NSString stringWithFormat:@"%02ld", 98l - lastCalculatedCheckDigits.integerValue];
 }
