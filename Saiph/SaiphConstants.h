@@ -14,7 +14,6 @@
 
 // Algorithms
 extern NSString * const kSaiphAlgorithmMod97;       //!< Mod 97 Algorithm - ISO 7064 implementation
-extern NSString * const kSaiphAlgorithmCNJMod97;    //!< CNJ Mod 97 Algorithm variation
 
 // Validations
 extern NSString * const kSaiphValidationCNJ;        //!< CNJ validation
