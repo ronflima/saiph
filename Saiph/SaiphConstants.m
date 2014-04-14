@@ -8,5 +8,6 @@
 
 #import "SaiphConstants.h"
 
-NSString * const kSaiphAlgorithmMod97   = @"SaiphAlgMod97";
-NSString * const kSaiphValidationCNJ    = @"SaiphVldCNJ";
+NSString * const kSaiphAlgorithmMod97       = @"SaiphAlgMod97";
+NSString * const kSaiphAlgorithmCNJMod97    = @"SaiphAlgCNJMod97";
+NSString * const kSaiphValidationCNJ        = @"SaiphVldCNJ";

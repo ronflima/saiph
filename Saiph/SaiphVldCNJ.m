@@ -10,6 +10,12 @@
 #import "SaiphChecksummer.h"
 #import "SaiphConstants.h"
 
+@interface SaiphVldCNJ ()
+
+- (NSString *)checkDigitsForData:(NSString *)data;
+
+@end
+
 @implementation SaiphVldCNJ
 
 #pragma mark - Normalization
@@ -56,24 +62,15 @@
 
 - (BOOL)validateData:(NSString *)data
 {
+    SaiphChecksummer *checksummer = [SaiphChecksummer checkSummerWithData:data andAlgorithm:kSaiphAlgorithmCNJMod97];
+    NSString *checkDigits = [self checkDigitsForData:data];
+    return [checkDigits isEqualToString:checksummer.checksum];
+}
+
+- (NSString *)checkDigitsForData:(NSString *)data
+{
     NSRange checkDigitRange = NSMakeRange(7, 2);
-    NSString *checkDigits = [data substringWithRange:checkDigitRange];
-    // Prepared data with check digits stripped off
-    NSString *preparedData = [data stringByReplacingCharactersInRange:checkDigitRange withString:@""];
-    NSArray *dataParts = @[
-                           [preparedData substringWithRange:NSMakeRange(0, 6)], // Lawsuit number
-                           [preparedData substringWithRange:NSMakeRange(7, 7)], //
-                           [preparedData substringWithRange:NSMakeRange(13, 4)] // Last part
-                           ];
-    SaiphChecksummer *checksummer = [SaiphChecksummer checksummerWithAlgorithm:kSaiphAlgorithmMod97];
-    __block NSString *lastCalculatedCheckDigits = nil;
-    [dataParts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        NSString *data = obj;
-        [checksummer setData:[lastCalculatedCheckDigits stringByAppendingString:data]];
-        lastCalculatedCheckDigits = checksummer.checksum;
-    }];
-    lastCalculatedCheckDigits = [NSString stringWithFormat:@"%02ld", 98l - lastCalculatedCheckDigits.integerValue];
-    return [checkDigits isEqualToString:lastCalculatedCheckDigits];
+    return [data substringWithRange:checkDigitRange];
 }
 
 @end
