@@ -4,8 +4,7 @@
 //
 //  Created by Ronaldo Faria Lima on 30/06/13.
 //
-// Copyright (c) 2013, Saibre Tecnologia da Informação
-// All rights reserved.
+// Copyright (c) 2014, Ronaldo Faria Lima - All Rights Reserved
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
@@ -29,11 +28,12 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 
-//! \defgroup SAIPH Saibre Saiph Library
+//! \defgroup SAIPH Saiph Library
 //! \{
 
 #import "SaiphConstants.h"
 #import "SaiphChecksummer.h"
+#import "SaiphValidator.h"
 
 //! \}
 

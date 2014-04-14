@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D100530318FBEB660076523A /* SaiphValidator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1217E0018F8853700EC082D /* SaiphValidator.h */; };
+		D100530418FBEB6B0076523A /* SaiphConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1E8767A17810E15009EEB44 /* SaiphConstants.h */; };
+		D100530718FBEB930076523A /* SaiphValidatorAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = D100530618FBEB930076523A /* SaiphValidatorAlgorithm.m */; };
+		D100530A18FBF1570076523A /* SaiphVldCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = D100530918FBF1570076523A /* SaiphVldCNJ.m */; };
+		D1217E0218F8853700EC082D /* SaiphValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1217E0118F8853700EC082D /* SaiphValidator.m */; };
 		D14857A01780E41D006BB829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579F1780E41D006BB829 /* Foundation.framework */; };
 		D14857A51780E41D006BB829 /* Saiph.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D14857A41780E41D006BB829 /* Saiph.h */; };
-		D14857AF1780E41D006BB829 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14857AE1780E41D006BB829 /* SenTestingKit.framework */; };
 		D14857B11780E41D006BB829 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14857B01780E41D006BB829 /* UIKit.framework */; };
 		D14857B21780E41D006BB829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579F1780E41D006BB829 /* Foundation.framework */; };
 		D14857B51780E41D006BB829 /* libSaiph.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579C1780E41D006BB829 /* libSaiph.a */; };
@@ -18,7 +22,6 @@
 		D1E876711780F948009EEB44 /* SaiphAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E876701780F948009EEB44 /* SaiphAlgorithm.m */; };
 		D1E876741780FBC0009EEB44 /* SaiphAlgMod97.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E876731780FBC0009EEB44 /* SaiphAlgMod97.m */; };
 		D1E8767717810B7F009EEB44 /* SaiphChecksummer.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8767617810B7F009EEB44 /* SaiphChecksummer.m */; };
-		D1E8767917810CE9009EEB44 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E8767817810CE9009EEB44 /* libobjc.A.dylib */; };
 		D1E8767C17810E15009EEB44 /* SaiphConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E8767B17810E15009EEB44 /* SaiphConstants.m */; };
 		D1E8767F17811566009EEB44 /* SaiphChecksummer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1E8767517810B7F009EEB44 /* SaiphChecksummer.h */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,8 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				D100530418FBEB6B0076523A /* SaiphConstants.h in CopyFiles */,
+				D100530318FBEB660076523A /* SaiphValidator.h in CopyFiles */,
 				D1E8767F17811566009EEB44 /* SaiphChecksummer.h in CopyFiles */,
 				D14857A51780E41D006BB829 /* Saiph.h in CopyFiles */,
 			);
@@ -48,13 +53,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D100530518FBEB930076523A /* SaiphValidatorAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphValidatorAlgorithm.h; sourceTree = "<group>"; };
+		D100530618FBEB930076523A /* SaiphValidatorAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphValidatorAlgorithm.m; sourceTree = "<group>"; };
+		D100530818FBF1570076523A /* SaiphVldCNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphVldCNJ.h; sourceTree = "<group>"; };
+		D100530918FBF1570076523A /* SaiphVldCNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphVldCNJ.m; sourceTree = "<group>"; };
 		D10AF0061780E9F100592A8F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		D1217E0018F8853700EC082D /* SaiphValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphValidator.h; sourceTree = "<group>"; };
+		D1217E0118F8853700EC082D /* SaiphValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphValidator.m; sourceTree = "<group>"; };
 		D148579C1780E41D006BB829 /* libSaiph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSaiph.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D148579F1780E41D006BB829 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D14857A31780E41D006BB829 /* Saiph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Saiph-Prefix.pch"; sourceTree = "<group>"; };
 		D14857A41780E41D006BB829 /* Saiph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saiph.h; sourceTree = "<group>"; };
-		D14857AD1780E41D006BB829 /* SaiphTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaiphTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14857AE1780E41D006BB829 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D14857AD1780E41D006BB829 /* SaiphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaiphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14857B01780E41D006BB829 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D14857B81780E41D006BB829 /* SaiphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SaiphTests-Info.plist"; sourceTree = "<group>"; };
 		D14857BA1780E41D006BB829 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -77,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E8767917810CE9009EEB44 /* libobjc.A.dylib in Frameworks */,
 				D14857A01780E41D006BB829 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14857AF1780E41D006BB829 /* SenTestingKit.framework in Frameworks */,
 				D14857B11780E41D006BB829 /* UIKit.framework in Frameworks */,
 				D14857B21780E41D006BB829 /* Foundation.framework in Frameworks */,
 				D14857B51780E41D006BB829 /* libSaiph.a in Frameworks */,
@@ -112,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				D148579C1780E41D006BB829 /* libSaiph.a */,
-				D14857AD1780E41D006BB829 /* SaiphTests.octest */,
+				D14857AD1780E41D006BB829 /* SaiphTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +130,6 @@
 			children = (
 				D1E8767817810CE9009EEB44 /* libobjc.A.dylib */,
 				D148579F1780E41D006BB829 /* Foundation.framework */,
-				D14857AE1780E41D006BB829 /* SenTestingKit.framework */,
 				D14857B01780E41D006BB829 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -141,6 +148,12 @@
 				D1E876731780FBC0009EEB44 /* SaiphAlgMod97.m */,
 				D1E8767A17810E15009EEB44 /* SaiphConstants.h */,
 				D1E8767B17810E15009EEB44 /* SaiphConstants.m */,
+				D1217E0018F8853700EC082D /* SaiphValidator.h */,
+				D100530518FBEB930076523A /* SaiphValidatorAlgorithm.h */,
+				D100530818FBF1570076523A /* SaiphVldCNJ.h */,
+				D100530918FBF1570076523A /* SaiphVldCNJ.m */,
+				D100530618FBEB930076523A /* SaiphValidatorAlgorithm.m */,
+				D1217E0118F8853700EC082D /* SaiphValidator.m */,
 			);
 			path = Saiph;
 			sourceTree = "<group>";
@@ -208,8 +221,8 @@
 			);
 			name = SaiphTests;
 			productName = SaiphTests;
-			productReference = D14857AD1780E41D006BB829 /* SaiphTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = D14857AD1780E41D006BB829 /* SaiphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -217,8 +230,10 @@
 		D14857941780E41D006BB829 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Saiph;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Saibre Tecnologia da Informação";
+				ORGANIZATIONNAME = "Ronaldo Faria Lima";
 			};
 			buildConfigurationList = D14857971780E41D006BB829 /* Build configuration list for PBXProject "Saiph" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -271,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E876711780F948009EEB44 /* SaiphAlgorithm.m in Sources */,
+				D100530A18FBF1570076523A /* SaiphVldCNJ.m in Sources */,
 				D1E876741780FBC0009EEB44 /* SaiphAlgMod97.m in Sources */,
+				D100530718FBEB930076523A /* SaiphValidatorAlgorithm.m in Sources */,
+				D1217E0218F8853700EC082D /* SaiphValidator.m in Sources */,
 				D1E8767717810B7F009EEB44 /* SaiphChecksummer.m in Sources */,
 				D1E8767C17810E15009EEB44 /* SaiphConstants.m in Sources */,
 			);
@@ -331,7 +349,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -354,7 +372,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -388,15 +406,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
+					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Saiph/Saiph-Prefix.pch";
 				INFOPLIST_FILE = "SaiphTests/SaiphTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -404,15 +422,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\\\"$(SDKROOT)/Developer/Library/Frameworks\\\"",
+					"\\\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\\\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Saiph/Saiph-Prefix.pch";
 				INFOPLIST_FILE = "SaiphTests/SaiphTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

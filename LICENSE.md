@@ -1,4 +1,4 @@
-Copyright (c) 2013, Saibre Tecnologia da Informação
+Copyright (c) 2014, Ronaldo Faria Lima
 
 All rights reserved.
 

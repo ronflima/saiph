@@ -3,12 +3,10 @@
 //  Saiph
 //
 //  Created by Ronaldo Faria Lima on 30/06/13.
-//  Copyright (c) 2013 Saibre Tecnologia da Informação. All rights reserved.
+//  Copyright (c) 2014, Ronaldo Faria Lima - All Rights Reserved
 //
 
 #import "SaiphAlgMod97.h"
-
-#define SPHSEARCH_REGEX @"[^A-Z0-9]"    
 
 @implementation SaiphAlgMod97
 
@@ -26,8 +24,8 @@
 - (NSString *)calculateChecksum:(NSString *)data
 {
     // Calculates the ISO 7064 checksum (mod 97 calculation)
-    unsigned checksum = 98 - (data.longLongValue % 97);
-    data = [NSString stringWithFormat:@"%d", checksum];
+    unsigned checksum = 98 - (data.integerValue % 97);
+    data = [NSString stringWithFormat:@"%02d", checksum];
     return data;
 }
 
