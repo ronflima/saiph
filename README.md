@@ -32,3 +32,9 @@ check digit was successfully calculated.
 
 This method is used to calculate the check digit within the IBAN number for 
 internation bank accounts.
+
+## CNJ Validation
+
+CNJ stands for _Conselho Nacional de Justiça_ which centralized and standardized a unique identification for
+lawsuits in Brazil. CNJ is validated according to the document "Resolução nº 65 de 16 de Dezembro de 2008", where all
+the formation law and algorithms for validation of the CNJ number are defined.
