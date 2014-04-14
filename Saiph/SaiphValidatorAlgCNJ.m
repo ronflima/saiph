@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Ronaldo Faria Lima. All rights reserved.
 //
 
-#import "SaiphVldCNJ.h"
+#import "SaiphValidatorAlgCNJ.h"
 #import "SaiphChecksummer.h"
 #import "SaiphConstants.h"
 
-@interface SaiphVldCNJ ()
+@interface SaiphValidatorAlgCNJ ()
 
 - (NSString *)checkDigitsForData:(NSString *)data;
 
 @end
 
-@implementation SaiphVldCNJ
+@implementation SaiphValidatorAlgCNJ
 
 #pragma mark - Normalization
 

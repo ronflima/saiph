@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "SaiphValidatorAlgorithm.h"
 
-@interface SaiphVldCNJ : SaiphValidatorAlgorithm
+@interface SaiphValidatorAlgCNJ : SaiphValidatorAlgorithm
 
 @end

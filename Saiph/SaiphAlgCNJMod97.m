@@ -20,9 +20,9 @@
 {
     // Prepared data with check digits stripped off
     NSArray *dataParts = @[
-                           [data substringWithRange:NSMakeRange(0, 7)], // Lawsuit number
-                           [data substringWithRange:NSMakeRange(7, 7)], // Year/Court part
-                           [data substringWithRange:NSMakeRange(14, 6)] // Location part
+                           [data substringWithRange:NSMakeRange( 0, 7)], // Lawsuit number
+                           [data substringWithRange:NSMakeRange( 7, 7)], // Year/Court part
+                           [data substringWithRange:NSMakeRange(14, 6)]  // Location part
                            ];
     __block NSString *lastCalculatedCheckDigits = @"";
     [dataParts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
