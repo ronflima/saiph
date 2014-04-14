@@ -7,7 +7,6 @@
 //
 
 #import "SaiphValidatorAlgCNJ.h"
-#import "SaiphChecksummer.h"
 #import "SaiphConstants.h"
 
 @interface SaiphValidatorAlgCNJ ()
@@ -54,6 +53,13 @@
         } while (--zeroes);
         [normalizedData insertString:zeroesString atIndex:0];
     }
+    
+    // Third step: extract the check digit and put at the end of the resulting string
+    NSRange checkDigitRange = NSMakeRange(7, 2);
+    NSString *checkDigits = [normalizedData substringWithRange:checkDigitRange];
+    [normalizedData replaceCharactersInRange:checkDigitRange withString:@""];
+    [normalizedData appendString:checkDigits];
+    
     // Returns a non-mutable instance of normalized data
     return [normalizedData copy];
 }
@@ -62,9 +68,17 @@
 
 - (BOOL)validateData:(NSString *)data
 {
-    SaiphChecksummer *checksummer = [SaiphChecksummer checkSummerWithData:data andAlgorithm:kSaiphAlgorithmCNJMod97];
-    NSString *checkDigits = [self checkDigitsForData:data];
-    return [checkDigits isEqualToString:checksummer.checksum];
+    NSArray *dataParts = @[
+                           [data substringWithRange:NSMakeRange( 0, 7)], // Lawsuit number
+                           [data substringWithRange:NSMakeRange( 7, 7)], // Year/Court part
+                           [data substringWithRange:NSMakeRange(14, 6)]  // Location part
+                           ];
+    __block NSString *lastCalculatedCheckDigits = @"";
+    [dataParts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString *dataPart = [lastCalculatedCheckDigits stringByAppendingString:obj];
+        lastCalculatedCheckDigits = [NSString stringWithFormat:@"%ld", (long)dataPart.integerValue % 97];
+    }];
+    return (lastCalculatedCheckDigits.integerValue % 97) == 1;
 }
 
 - (NSString *)checkDigitsForData:(NSString *)data
