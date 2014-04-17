@@ -14,6 +14,7 @@
 		D101C6871900161100A304F4 /* SaiphNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C6861900161100A304F4 /* SaiphNormalizer.m */; };
 		D101C68A1900193100A304F4 /* SaiphClassLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C6891900193100A304F4 /* SaiphClassLoader.m */; };
 		D101C68D19006B9900A304F4 /* SaiphNormalizationCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C68C19006B9900A304F4 /* SaiphNormalizationCNJ.m */; };
+		D101C68F19007F9300A304F4 /* SaiphNormalizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D101C6851900161100A304F4 /* SaiphNormalizer.h */; };
 		D121082118FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = D121082018FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.m */; };
 		D1217E0218F8853700EC082D /* SaiphValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1217E0118F8853700EC082D /* SaiphValidator.m */; };
 		D14857A01780E41D006BB829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579F1780E41D006BB829 /* Foundation.framework */; };
@@ -47,6 +48,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				D101C68F19007F9300A304F4 /* SaiphNormalizer.h in CopyFiles */,
 				D100530418FBEB6B0076523A /* SaiphConstants.h in CopyFiles */,
 				D100530318FBEB660076523A /* SaiphValidator.h in CopyFiles */,
 				D1E8767F17811566009EEB44 /* SaiphChecksummer.h in CopyFiles */,
