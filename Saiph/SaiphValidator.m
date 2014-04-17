@@ -6,9 +6,9 @@
 //  Copyright (c) 2014, Ronaldo Faria Lima - All Rights Reserved
 //
 
-#import <objc/runtime.h>
 #import "SaiphValidator.h"
 #import "SaiphValidatorAlgorithm.h"
+#import "SaiphClassLoader.h"
 
 @interface SaiphValidator ()
 
@@ -80,14 +80,10 @@
     if (! _validatorAlgorithm) {
         // Loads the algorithm class dynamically in order to ensure full
         // transparency and low coupling. Do a lazy load.
-        Class classDefinition = objc_lookUpClass([self.algorithm cStringUsingEncoding:NSUTF8StringEncoding]);
-        if (classDefinition == nil) {
-            @throw [NSException exceptionWithName:@"ObjectNotAvailable" reason:@"Could not load required algorithm" userInfo:nil];
-        }
-        if (! [classDefinition isSubclassOfClass:[SaiphValidatorAlgorithm class]]) {
+        _validatorAlgorithm = [[SaiphClassLoader loadClass:self.algorithm] init];
+        if (! [_validatorAlgorithm.class isSubclassOfClass:[SaiphValidatorAlgorithm class]]) {
             @throw [NSException exceptionWithName:@"ObjectNotAvailable" reason:@"Validator not of the proper type." userInfo:nil];
         }
-        _validatorAlgorithm = [[classDefinition alloc] init];
     }
     return _validatorAlgorithm;
 }

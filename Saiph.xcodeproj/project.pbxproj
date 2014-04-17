@@ -10,6 +10,10 @@
 		D100530318FBEB660076523A /* SaiphValidator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1217E0018F8853700EC082D /* SaiphValidator.h */; };
 		D100530418FBEB6B0076523A /* SaiphConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1E8767A17810E15009EEB44 /* SaiphConstants.h */; };
 		D100530718FBEB930076523A /* SaiphValidatorAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = D100530618FBEB930076523A /* SaiphValidatorAlgorithm.m */; };
+		D101C6841900146400A304F4 /* SaiphNormalization.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C6831900146400A304F4 /* SaiphNormalization.m */; };
+		D101C6871900161100A304F4 /* SaiphNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C6861900161100A304F4 /* SaiphNormalizer.m */; };
+		D101C68A1900193100A304F4 /* SaiphClassLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C6891900193100A304F4 /* SaiphClassLoader.m */; };
+		D101C68D19006B9900A304F4 /* SaiphNormalizationCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = D101C68C19006B9900A304F4 /* SaiphNormalizationCNJ.m */; };
 		D121082118FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.m in Sources */ = {isa = PBXBuildFile; fileRef = D121082018FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.m */; };
 		D1217E0218F8853700EC082D /* SaiphValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D1217E0118F8853700EC082D /* SaiphValidator.m */; };
 		D14857A01780E41D006BB829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D148579F1780E41D006BB829 /* Foundation.framework */; };
@@ -55,6 +59,14 @@
 /* Begin PBXFileReference section */
 		D100530518FBEB930076523A /* SaiphValidatorAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphValidatorAlgorithm.h; sourceTree = "<group>"; };
 		D100530618FBEB930076523A /* SaiphValidatorAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphValidatorAlgorithm.m; sourceTree = "<group>"; };
+		D101C6821900146400A304F4 /* SaiphNormalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphNormalization.h; sourceTree = "<group>"; };
+		D101C6831900146400A304F4 /* SaiphNormalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphNormalization.m; sourceTree = "<group>"; };
+		D101C6851900161100A304F4 /* SaiphNormalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphNormalizer.h; sourceTree = "<group>"; };
+		D101C6861900161100A304F4 /* SaiphNormalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphNormalizer.m; sourceTree = "<group>"; };
+		D101C6881900193100A304F4 /* SaiphClassLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphClassLoader.h; sourceTree = "<group>"; };
+		D101C6891900193100A304F4 /* SaiphClassLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphClassLoader.m; sourceTree = "<group>"; };
+		D101C68B19006B9900A304F4 /* SaiphNormalizationCNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphNormalizationCNJ.h; sourceTree = "<group>"; };
+		D101C68C19006B9900A304F4 /* SaiphNormalizationCNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphNormalizationCNJ.m; sourceTree = "<group>"; };
 		D10AF0061780E9F100592A8F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		D121081F18FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaiphValidatorAlgCNJ.h; sourceTree = "<group>"; };
 		D121082018FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaiphValidatorAlgCNJ.m; sourceTree = "<group>"; };
@@ -104,6 +116,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D101C6811900141E00A304F4 /* Normalization */ = {
+			isa = PBXGroup;
+			children = (
+				D101C6821900146400A304F4 /* SaiphNormalization.h */,
+				D101C6831900146400A304F4 /* SaiphNormalization.m */,
+				D101C6851900161100A304F4 /* SaiphNormalizer.h */,
+				D101C6861900161100A304F4 /* SaiphNormalizer.m */,
+				D101C68B19006B9900A304F4 /* SaiphNormalizationCNJ.h */,
+				D101C68C19006B9900A304F4 /* SaiphNormalizationCNJ.m */,
+			);
+			name = Normalization;
+			sourceTree = "<group>";
+		};
 		D14857931780E41D006BB829 = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +166,12 @@
 				D14857A41780E41D006BB829 /* Saiph.h */,
 				D1E8767A17810E15009EEB44 /* SaiphConstants.h */,
 				D1E8767B17810E15009EEB44 /* SaiphConstants.m */,
+				D101C6881900193100A304F4 /* SaiphClassLoader.h */,
+				D101C6891900193100A304F4 /* SaiphClassLoader.m */,
 				D14857A21780E41D006BB829 /* Supporting Files */,
 				D1CBF5B218FC4EDA00A8F10B /* Algorithms */,
 				D1CBF5B318FC4EF300A8F10B /* Validation */,
+				D101C6811900141E00A304F4 /* Normalization */,
 			);
 			path = Saiph;
 			sourceTree = "<group>";
@@ -302,10 +330,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E876711780F948009EEB44 /* SaiphAlgorithm.m in Sources */,
+				D101C6871900161100A304F4 /* SaiphNormalizer.m in Sources */,
 				D121082118FC4FAC00FCCBB4 /* SaiphValidatorAlgCNJ.m in Sources */,
 				D1E876741780FBC0009EEB44 /* SaiphAlgMod97.m in Sources */,
+				D101C6841900146400A304F4 /* SaiphNormalization.m in Sources */,
+				D101C68A1900193100A304F4 /* SaiphClassLoader.m in Sources */,
 				D100530718FBEB930076523A /* SaiphValidatorAlgorithm.m in Sources */,
 				D1217E0218F8853700EC082D /* SaiphValidator.m in Sources */,
+				D101C68D19006B9900A304F4 /* SaiphNormalizationCNJ.m in Sources */,
 				D1E8767717810B7F009EEB44 /* SaiphChecksummer.m in Sources */,
 				D1E8767C17810E15009EEB44 /* SaiphConstants.m in Sources */,
 			);

@@ -10,3 +10,4 @@
 
 NSString * const kSaiphAlgorithmMod97       = @"SaiphAlgMod97";
 NSString * const kSaiphValidationCNJ        = @"SaiphValidatorAlgCNJ";
+NSString * const kSaiphNormalizationCNJ     = @"SaiphNormalizationCNJ";

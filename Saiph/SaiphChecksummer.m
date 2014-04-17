@@ -6,9 +6,9 @@
 //  Copyright (c) 2014, Ronaldo Faria Lima - All Rights Reserved
 //
 
-#import <objc/runtime.h>
 #import "SaiphChecksummer.h"
 #import "SaiphAlgorithm.h"
+#import "SaiphClassLoader.h"
 
 @interface SaiphChecksummer ()
 
@@ -87,14 +87,10 @@
     if (! _algorithm) {
         // Loads the algorithm class dynamically and lazily in order to ensure full
         // transparency and low coupling
-        Class classDefinition = objc_lookUpClass([self.algorithmName cStringUsingEncoding:NSUTF8StringEncoding]);
-        if (classDefinition == nil) {
-            @throw [NSException exceptionWithName:@"ObjectNotAvailable" reason:@"Could not load required algorithm" userInfo:nil];
-        }
-        if (! [classDefinition isSubclassOfClass:[SaiphAlgorithm class]]) {
+        _algorithm = [[SaiphClassLoader loadClass:self.algorithmName] init];
+        if (! [_algorithm.class isSubclassOfClass:[SaiphAlgorithm class]]) {
             @throw [NSException exceptionWithName:@"ObjectNotAvailable" reason:@"Algorithm not of the proper type." userInfo:nil];
         }
-        _algorithm = [[classDefinition alloc] init];
     }
     return _algorithm;
 }

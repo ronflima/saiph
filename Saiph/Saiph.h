@@ -34,6 +34,7 @@
 #import "SaiphConstants.h"
 #import "SaiphChecksummer.h"
 #import "SaiphValidator.h"
+#import "SaiphNormalizer.h"
 
 //! \}
 

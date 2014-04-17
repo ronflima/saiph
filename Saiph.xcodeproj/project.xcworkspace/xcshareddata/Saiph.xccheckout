@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BCDEE75C-5CE0-41C6-9373-9C08EBFBF91E</string>
+	<string>41F1D24B-4802-4162-AAC8-F23E18BE23E0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Saiph</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5DC9BE32-3968-49C2-B128-5B4466B974DE</key>
+		<key>5EF016C3-132B-42FC-BBA3-5EB64E2EDF0D</key>
 		<string>ssh://github.com/ronflima/saiph.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Saiph.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5DC9BE32-3968-49C2-B128-5B4466B974DE</key>
+		<key>5EF016C3-132B-42FC-BBA3-5EB64E2EDF0D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5DC9BE32-3968-49C2-B128-5B4466B974DE</string>
+	<string>5EF016C3-132B-42FC-BBA3-5EB64E2EDF0D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5DC9BE32-3968-49C2-B128-5B4466B974DE</string>
+			<string>5EF016C3-132B-42FC-BBA3-5EB64E2EDF0D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>saiph</string>
+			<string>Saiph</string>
 		</dict>
 	</array>
 </dict>

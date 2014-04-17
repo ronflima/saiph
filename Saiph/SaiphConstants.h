@@ -18,5 +18,8 @@ extern NSString * const kSaiphAlgorithmMod97;       //!< Mod 97 Algorithm - ISO 
 // Validations
 extern NSString * const kSaiphValidationCNJ;        //!< CNJ validation
 
+// Normalizations
+extern NSString * const kSaiphNormalizationCNJ;     //!< CNJ Normalization
+
 
 //! \}
