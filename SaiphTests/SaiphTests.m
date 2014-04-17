@@ -30,7 +30,8 @@
                      @"0944986-34.2012.8.26.0506",
                      @"0144460-67.2006.8.26.0100",
                      @"0000609-49.2006.8.26.0397",
-                     @"0028098-36.2000.8.26--0053"
+                     @"0028098-36.2000.8.26--0053",
+                     @"0047ASDF.-llkd3584420asdfddad1382dddasdfx605[]ppooiuiuyr06"
                      ];
 }
 
@@ -73,6 +74,7 @@
     SaiphNormalizer *normalizer = [[SaiphNormalizer alloc] initWithNormalizationMethod:kSaiphNormalizationCNJ];
     [CNJCheckData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSString *normalizedData = [normalizer normalizeData:obj];
+        NSLog (@"Checking normalization for %@: %@", obj, normalizedData);
         XCTAssert(normalizedData.length == CNJ_LENGTH, @"Normalization failed for data %@", obj);
     }];
 }
