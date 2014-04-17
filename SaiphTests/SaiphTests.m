@@ -9,6 +9,7 @@
 #import "SaiphTests.h"
 #import "Saiph.h"
 
+#define CNJ_LENGTH 20
 #define CHECKSUMMED_VALUE(a, b) (a * 100 + b)
 #define VALID_CHECKSUM(a,b) (CHECKSUMMED_VALUE(a, b) % 97 == 1)
 
@@ -64,6 +65,15 @@
         [validator setStringData:obj];
         BOOL isValid = [validator validate];
         XCTAssert(isValid, @"Validation failed for data %@", obj);
+    }];
+}
+
+- (void)testNormalizer
+{
+    SaiphNormalizer *normalizer = [[SaiphNormalizer alloc] initWithNormalizationMethod:kSaiphNormalizationCNJ];
+    [CNJCheckData enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString *normalizedData = [normalizer normalizeData:obj];
+        XCTAssert(normalizedData.length == CNJ_LENGTH, @"Normalization failed for data %@", obj);
     }];
 }
 
