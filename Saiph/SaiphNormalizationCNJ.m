@@ -28,6 +28,11 @@
     NSRange range;
     do {
         range = [data rangeOfString:CNJ_REGEXP options:NSRegularExpressionSearch];
+        if (range.length == 0) {
+            // Information provided does not contain any number. So, returns to the caller whatever
+            // we have received.
+            return data;
+        }
         [normalizedData appendString:[data substringWithRange:range]];
         NSInteger location = range.location;
         range.location  += range.length;

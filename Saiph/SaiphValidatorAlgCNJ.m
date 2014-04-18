@@ -10,6 +10,8 @@
 #import "SaiphConstants.h"
 #import "SaiphNormalizer.h"
 
+#define CNJ_SIZE 20 //!< Size of a CNJ number
+
 @interface SaiphValidatorAlgCNJ ()
 
 - (NSString *)checkDigitsForData:(NSString *)data;
@@ -35,6 +37,10 @@
 
 - (BOOL)validateData:(NSString *)data
 {
+    if (data.length < CNJ_SIZE) {
+        // Provided data has not the expected size. No way to validate it.
+        return NO;
+    }
     NSArray *dataParts = @[
                            [data substringWithRange:NSMakeRange( 0, 7)], // Lawsuit number
                            [data substringWithRange:NSMakeRange( 7, 7)], // Year/Court part
